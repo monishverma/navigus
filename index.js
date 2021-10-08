@@ -437,6 +437,6 @@ function isLoggedIn(req, res, next) {
 
 // -----------------------------------------------------
 
-app.listen(8000, function (req, res) {
+app.listen(process.env.PORT, function (req, res) {
     console.log('Server is listening!');
 });
