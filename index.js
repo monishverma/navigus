@@ -13,8 +13,9 @@ var local = require('passport-local');
 var path = require('path');
 const axios = require('axios');
 var passportLocalMongoose = require('passport-local-mongoose');
+const uri = process.env.URL;
 
-mongoose.connect('mongodb+srv://monu:monu@cluster0.c0hrb.mongodb.net/quiz?retryWrites=true&w=majority', {
+mongoose.connect(uri, {
     useNewUrlParser: true,
     useCreateIndex: true,
     useUnifiedTopology: true
