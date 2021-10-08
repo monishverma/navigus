@@ -14,7 +14,7 @@ var path = require('path');
 const axios = require('axios');
 var passportLocalMongoose = require('passport-local-mongoose');
 const uri = process.env.URL;
-
+const PORT = process.env.PORT || 8000;
 mongoose.connect(uri, {
     useNewUrlParser: true,
     useCreateIndex: true,
